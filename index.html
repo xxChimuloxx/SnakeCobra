@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Cobra – Proyecto de Theo</title>
+
+    <!-- Favicon (cambiá la ruta por la de tu icono de cobra) -->
+    <link rel="icon" type="image/png" href="cobra-favicon.png" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at top, #1d283a 0, #050816 45%, #000 100%);
+            color: #f5f5f5;
+        }
+
+        .wrapper {
+            text-align: center;
+            padding: 2rem;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 3vw, 3rem);
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-card {
+            position: relative;
+            margin: 0 auto;
+            max-width: 700px;
+            border-radius: 1.2rem;
+            overflow: hidden;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .image-card img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Capa oscura suave sobre la imagen para que se lea bien el botón */
+        .image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.75)
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .btn-jugar {
+            display: inline-block;
+            padding: 0.9rem 2.4rem;
+            border-radius: 999px;
+            border: none;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            background: #facc15;
+            color: #1b1b1b;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+        }
+
+        .btn-jugar:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+            filter: brightness(1.1);
+        }
+
+        .btn-jugar:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .note {
+            margin-top: 1.4rem;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!--h1>Mundo Cobra</h1>
+        <p class="subtitle">Pantalla de inicio del trabajo de investigación sobre cobras.</p-->
+
+        <div class="image-card">
+            <!-- ACA VA TU IMAGEN PRINCIPAL -->
+            <!-- Cuando la tengas, reemplazá el src por el archivo real, por ejemplo: "img/intro-cobra.jpg" -->
+            <img src="imagen.png" alt="Ilustración de cobra para el proyecto de Theo" />
+        </div>
+        <br>
+        <a href="snake.html" class="btn-jugar">
+            Jugar al Snake de la Cobra
+        </a>
+        
+    </div>
+</body>
+</html>
